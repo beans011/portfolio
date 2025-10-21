@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Portfolio for Callum Ewin</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,23 +12,50 @@
     <p class="tagline">Game Dev | Tool Development</p>
   </header>
 
-  <section class="overview">
+  <nav class="navbar">
+  <img src="Portfolio Banner 2.png" alt="Banner" class="banner-image" />
+  <div class="links-container">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <section class="overview" id="about">
     <h2>About Me</h2>
     <p>
-      aaaaaaaaaaaaaaaaa
+     I'm a recent graduate of Computer Games Development from Manchester Metropolitan University, with over three years of experience using Unity to create both personal and university projects. From Game-Jam style games to development tools that streamline the creation process.
+    </p>
+    <p>
+    My background spans hands-on networking, gameplay systems, tool development, and active participation in game communities, allowing me to bring a variety of transferable skills and a collaborative mindset to every project.
+    </p>
+    <p>
+    Outside of development, I’m passionate about games like Path of Exile, where I enjoy exploring the game’s intricate systems and engaging with its community. My interest in how complex mechanics and tools come together to shape player experiences continues to inspire my approach to creating efficient game systems and development tools.
     </p>
   </section>
 
-  <section class="experience">
-    <h2>Experiences</h2>
+<section class="contact" id="contact">
+    <h2>Contact Information</h2>
     <ul>
-      <li><strong>aaa</strong> — aaa</li>
-      <li><strong>bbb</strong> — bbb</li>
-      <li><strong>ccc</strong> — ccc</li>
+      <li><strong>GitHub</strong> — <a href="https://github.com/beans011">https://github.com/beans011</a></li>
+      <li><strong>LinkedIn</strong> — <a href="https://www.linkedin.com/in/callum-ewin-36a347288/">https://www.linkedin.com/in/callum-ewin-36a347288/</a></li>
+      <li><strong>Email Address</strong> — callumewin@outlook.com</li>
     </ul>
   </section>
 
-  <section class="projects">
+  <section class="experience" id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Proficent in</strong> — C#, JIRA, Agile Methodology and GitHub </li>
+      <li><strong>Experience in</strong> — C++, OpenGl, Java, HTML, CSS</li>
+      <li><strong>Other Skills</strong> — Networking, IT Support, System Troubleshooting</li>
+    </ul>
+  </section>
+
+  <section class="projects" id="projects">
   <h2 class="project-title">Featured Projects</h2>
   <div class="project-grid">
     <div class="project-card">
@@ -62,8 +89,14 @@
 </section>
 
   <footer class="footer">
-    <p>© 2025 Your Name. All rights reserved.</p>
+    <p>© 2025 Callum Ewin. All rights reserved.</p>
   </footer>
+
+<script>
+  window.addEventListener('load', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 </body>
 </html>
 
