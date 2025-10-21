@@ -1,0 +1,24 @@
+Bio:
+short something about why i program the stuff i want to do and what i like eg POE 
+
+Contact info:
+email address basically
+github link as well
+
+Relavant Skills:
+languages ik 
+technical skills eg networking and other kack i did at lancaster uni
+
+Projects:
+Project 1:
+My final uni project
+
+Project 2:
+Game Engines Unit
+
+Project 3:
+procedureal generation system
+
+Project 4:
+Banquet of books
+include what i did and the link to the game
