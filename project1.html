@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bossman's Simulator | Portfolio – Callum Ewin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <img src="Portfolio Banner 2.png" alt="Banner" class="banner-image" />
+    <div class="links-container">
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="site-title">Bossman's Simulator</h1>
+    <p class="tagline">A shop simulator style game based around dodgy cornershops.</p>
+  </header>
+
+  <!-- OVERVIEW SECTION -->
+  <section class="overview">
+    <h2>Project Overview</h2>
+    <p>
+	Bossman's Simulator is a game demo developed as part of my final year project at university.
+        The game is set in a dark, low-poly neighbourhood where the player takes on the role of a small shop owner managing and expanding their business.
+    </p>
+    <p>
+    From the start, my main objective was to design and implement a robust, modular architecture that could support future expansion. The project also served as an opportunity to explore
+PS1-style visuals, aiming to create a cohesive and nostalgic aesthetic consistent across the environment and UI.
+    </p>
+    <p>
+    Players engage in a simple gameplay loop of buying stock, selling products and arranging their shop layout. The shelf placement system is fully customisable, giving the player some freedom to design their own store.
+    </p>
+    <p>
+    The game also features a basic NPC AI, where customers make purchasing decisions intelligently based on the randomly generated budgets, adding realism and variablity to each NPC.
+    </p>
+    <p>
+    The core goal of the project was achieved; to build a stable and maintainable game framework free from major bugs. While not all planned features were implemented within the project timeline, 
+the underlying architecture is designed for easy expansion, allowing new systems and content to be integrated smoothly in future iterations.
+    </p>
+  </section>
+
+  <!-- FEATURES / TECHNIQUES SECTION -->
+  <section class="experience">
+    <h2>Features & Techniques</h2>
+    <ul>
+      <li>Architecture — patterns such as Singletons, Observer and Factory were used to create many of the gameplay mechanics and underlying systems.</li>
+      <li>Unity — as part of the development process I created a set of tools to help streamline the process. A cheat console was made to aid in testing and UI tools were created to speed up the process.</li>
+      <li>Data Driven — a large section of the code can be applied to a variety of apps and software as the game was designed to be driven by data.</li>
+    </ul>
+  </section>
+
+  <!-- MEDIA SECTION -->
+  <section class="projects">
+    <h2>Media Showcase</h2>
+
+    <!-- Example video -->
+    <div class="project-media">
+  <iframe 
+    width="100%" 
+    height="450" 
+    src="https://www.youtube.com/embed/hFVQI-bz9is?si=WBqFqWy93BHxx9Bb" 
+    title="YouTube video player" 
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+    <!-- Example images -->
+    <div class="project-images">
+      <img src="add to stock info.png" alt="Screenshot 1" />
+      <img src="end screen.png" alt="Screenshot 2" />
+    </div>
+
+    <div class="project-link">
+      <a href="https://github.com/beans011/Bossmans-Simulator" target="_blank" class="github-btn">View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Callum Ewin. All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

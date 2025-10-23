@@ -280,3 +280,70 @@ section {
   font-size: 0.9rem;
   color: #666;
 }
+
+/* ====== PROJECT PAGE MEDIA STYLES ====== */
+.project-media {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.project-media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+.projects h2 {
+  text-align: center;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.project-images img {
+  width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  object-fit: cover;
+}
+
+.github-btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.project-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.github-btn:hover {
+  background-color: #6c63ff;
+  transform: translateY(-3px);
+}
+
+.overview p {
+  text-align: center;
+}
