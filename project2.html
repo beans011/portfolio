@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bossman's Simulator | Portfolio – Callum Ewin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <img src="images/portfolio-banner.png" alt="Banner" class="banner-image" />
+    <div class="links-container">
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="site-title">2D Game Engine</h1>
+    <p class="tagline">A 2D Game Engine created in C++ as part of a university unit.</p>
+  </header>
+
+  <!-- OVERVIEW SECTION -->
+  <section class="overview">
+    <h2>Project Overview</h2>
+    <p>
+    As part of a team project, I led the development of a custom UI system within a 2D game engine written in C++, using ImGui for the game UI. The goal was to create a robust and fully modular UI framework that allowed users to dynamically create and configure UI components at runtime.
+    </p>
+    <p>
+    My personal contributions were developing the factory class system capable of generating UI elements from user defined data. The system supports key UI components including labels, buttons, checkboxes and images, all of which can be modified in real time through Lua scripting. The scripting integration was successfully developed by working closely with the scripting team.
+    </p>
+    <p>
+    As the UI Team Lead, I coordinated development efforts between members of the sub team and talked with other teams to understand their wants and needs within the project and how the UI team can aid in helping. This involved active communication, iterative feedback cycles and including user testing.
+    </p>
+    <p>
+    After completeing the core UI framework, I transitioned into testing, where I created several gameplay prototypes including; a particle system, a Flappy Bird clone and a basic platformer. Each prototyped was developed to test the many differnt systems developed for the engine from physics to UI. These tests provided valuable feedback to each team that led to new features and engine optimisation. 
+    </p>
+  </section>
+
+  <!-- FEATURES / TECHNIQUES SECTION -->
+  <section class="experience">
+    <h2>Features & Techniques</h2>
+    <ul>
+      <li>Architecture — patterns such as Singletons and Factory were used to create a modular and robust framework, making it simple to add new UI elements.</li>
+      <li>C++ — By creating a game engine, I gained a deeper understanding of the underlying architecture and programming techniques involved in developing complex software. </li>
+      <li>Testing — By conducting tests through small game prototypes, I strengthened my ability to evaluate system peformance, identify bugs and ensure features function as intended.</li>
+    </ul>
+
+    <div class="project-link">
+      <a href="https://github.com/beans011/GameEngines24-25" target="_blank" class="github-btn">View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Callum Ewin. All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
