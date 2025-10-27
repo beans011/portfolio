@@ -41,8 +41,8 @@ the values are then processed through a biome lookup system, which asigns differ
 placement. The tile placement function runs in a co-routine to avoid freezing the game on the main thread. Chunks are used to allow for the option to use Occlusion Culling to avoid rendering all tiles for the player during runtime.
     </p>
     <p>
-    A key focus was achieving readable and maintainable code, allowing for further biomes and systems to be integrated in the future. The demo can be easily implemented into a future game a tweaked in the Unity Inspector 
-for various needs. The project also explores island generation usiing fall off curves to genrate circular landmasses.
+    A key focus was achieving readable and maintainable code, allowing for further biomes and systems to be integrated in the future. The demo can be easily implemented into a future game and tweaked in the Unity Inspector 
+for various needs. The project also explores island generation using fall off curves to genrate circular landmasses.
     </p>
   </section>
 
@@ -50,9 +50,9 @@ for various needs. The project also explores island generation usiing fall off c
   <section class="experience">
     <h2>Features & Techniques</h2>
     <ul>
-      <li>Biome Mapping System — a flexible lookup table defines biomes types based on elevationa dn temperature thresholds, allowing for near seamless biome transitions.</li>
+      <li>Biome Mapping System — a flexible lookup table defines biomes types based on elevation and temperature thresholds, allowing for near seamless biome transitions.</li>
       <li>Optimisation — world generation is handled through co-routines and chunks, distributing the generation over multiple frames to maintain smooth peformance without multithreading.</li>
-      <li>Scalable — by focusing on modular structure and being to able to change the generation behaiour in the inspector has created a project that has excellent foundations for future features to build upon.</li>
+      <li>Scalable — by focusing on modular structure and being to able to change the generation behaviour in the Inspector has created a project that has excellent foundations for future features to build upon.</li>
     </ul>
   </section>
 
