@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2D Procedural Generation | Portfolio – Callum Ewin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <img src="images/portfolio-banner.png" alt="Banner" class="banner-image" />
+    <div class="links-container">
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="site-title">2D Procedural Generation</h1>
+    <p class="tagline">A small prototype for generating terrain on a 2D tilemap and optimising it for single thread peformance.</p>
+  </header>
+
+  <!-- OVERVIEW SECTION -->
+  <section class="overview">
+    <h2>Project Overview</h2>
+    <p>
+    This project is a technical demo developed to gain a deeper understanding of optimising large algorithms and creating complex game systems. The system focuses on generating fully 
+procedural 2D tile worlds using Perlin noise, biomes and chunk based rendering and loading. The objective was to create a scalable and modular architecture capable of generating entire maps while 
+maintaining smooth peformance on the main thread.
+    </p>
+    <p>
+    The tile generation uses layerd Perlin noise and fall off maps to produce near natural elevation and temperature variations. To visually see the distinction between elevation and temperature
+the values are then processed through a biome lookup system, which asigns different biomes depending on the elevation and temperature values of the tile. To improve peformance the values are generated before tile
+placement. The tile placement function runs in a co-routine to avoid freezing the game on the main thread. Chunks are used to allow for the option to use Occlusion Culling to avoid rendering all tiles for the player during runtime.
+    </p>
+    <p>
+    A key focus was achieving readable and maintainable code, allowing for further biomes and systems to be integrated in the future. The demo can be easily implemented into a future game a tweaked in the Unity Inspector 
+for various needs. The project also explores island generation usiing fall off curves to genrate circular landmasses.
+    </p>
+  </section>
+
+  <!-- FEATURES / TECHNIQUES SECTION -->
+  <section class="experience">
+    <h2>Features & Techniques</h2>
+    <ul>
+      <li>Biome Mapping System — a flexible lookup table defines biomes types based on elevationa dn temperature thresholds, allowing for near seamless biome transitions.</li>
+      <li>Optimisation — world generation is handled through co-routines and chunks, distributing the generation over multiple frames to maintain smooth peformance without multithreading.</li>
+      <li>Scalable — by focusing on modular structure and being to able to change the generation behaiour in the inspector has created a project that has excellent foundations for future features to build upon.</li>
+    </ul>
+  </section>
+
+  <!-- MEDIA SECTION -->
+  <section class="projects">
+    <h2>Media Showcase</h2>   
+    <!-- Example images -->
+    <div class="project-images">
+      <img src="images/gen1.png" alt="Screenshot 1" />
+      <img src="images/gen2.png" alt="Screenshot 2" />
+      <img src="images/gen3.png" alt="Screenshot 3" />
+      <img src="images/gen2.1.PNG" alt="Screenshot 4" />
+      <img src="images/gen2.2.PNG" alt="Screenshot 5" />
+      <img src="images/gen2.3.PNG" alt="Screenshot 6" />
+    </div>
+
+    <div class="project-link">
+      <a href="https://github.com/beans011/Procedureal-Gen-Messing-Around" target="_blank" class="github-btn">View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Callum Ewin. All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
